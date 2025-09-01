@@ -1,0 +1,139 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddeeeb;
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.login-header {
+  background-color: #346b62;
+  color: white;
+  padding: 30px 40px;
+  text-align: center;
+  margin: 0;
+}
+
+.login-header h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.login-header p {
+  color: #b2d9d3;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.login-form {
+  padding: 40px;
+  margin: 0;
+}
+
+.login-footer {
+  text-align: center;
+  padding: 0 40px 40px 40px;
+  border-top: none;
+}
+
+.login-footer p {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+.link {
+  color: #346b62;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #2a5a52;
+}
+.input-label {
+  text-align: left;
+}
+.error-message {
+  text-align: left;
+}
+.btn-full {
+  border-radius: 8px;
+}
+.input-container {
+  position: relative;
+}
+.toggle-visibility {
+  position: absolute;
+  right: 12px;
+  top: 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  user-select: none;
+  transition: color 0.2s;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 16px;
+  }
+
+  .login-card {
+    max-width: 100%;
+  }
+
+  .login-header {
+    padding: 24px 24px;
+  }
+
+  .login-form {
+    padding: 32px 24px;
+  }
+
+  .login-footer {
+    padding: 0 24px 32px 24px;
+  }
+
+  .login-header h1 {
+    font-size: 24px;
+  }
+
+  .login-header p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-header {
+    padding: 20px 20px;
+  }
+
+  .login-form {
+    padding: 28px 20px;
+  }
+
+  .login-footer {
+    padding: 0 20px 28px 20px;
+  }
+
+  .login-header h1 {
+    font-size: 22px;
+  }
+}

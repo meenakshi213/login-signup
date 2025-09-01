@@ -1,0 +1,68 @@
+.btn {
+  padding: 14px 32px;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  min-width: 120px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: #346B62;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #2a5a52;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(52, 107, 98, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #346B62;
+  border: 2px solid #346B62;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #346B62;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.btn-success {
+  background-color: #27ae60;
+  color: white;
+}
+
+.btn-success:hover:not(:disabled) {
+  background-color: #229954;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .btn {
+    padding: 12px 24px;
+    font-size: 13px;
+    min-width: 100px;
+  }
+}
